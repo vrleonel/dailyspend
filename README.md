@@ -12,4 +12,4 @@ Programa para controle de gastos diários.
 ### Comando
 $ gem install sass
 
-$ sass --watch style.scss:style.css
+$ sass --watch .sass:css

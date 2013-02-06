@@ -43,30 +43,37 @@ include("config.php");
 
         <section>
           <h2>Nova conta</h2>
-          <p>
-            <label>Gasto: </label><input type="text" name="txtGasto" value="" />
-          </p>
-          <p>
-            <label>Valor: </label><input type="number" name="txtValor" value="" />
-          </p>
-          <p>
-            <label>Tipo: </label>
+          <form action="save.php" name="frmNewSpend" method="post">
+            <p>
+              <label>Gasto: </label><input type="text" name="txtGasto" id="txtGasto" value="" />
+            </p>
+            <p>
+              <label>Valor: </label><input type="number" name="txtValor" id="txtValor" value="" />
+            </p>
+            <p>
+              <label>Data: </label><input type="date" name="txtData" id="txtData" value="2013-02-06" />
+            </p>
+            <p>
+              <label>Tipo: </label>
 
-            <select name="sltTipo">
-              <? foreach($arrTipo as $key=>$tipo){ ?>
-              <option value="<?=$key?>"><?= $tipo ?></option>
-              <? } ?>
-            </select>
-          </p>
-          <p><label>Forma de Pgamento:</label>
-            <select>
-              <? foreach($arrForma as $key => $forma){ ?>
-                <option value="<?=$key?>"><?= $forma ?></option>
-              <? } ?>
-            </select>
-          </p>
-          <p></p>
-          <p></p>
+              <select name="sltTipo">
+                <? foreach($arrTipo as $key=>$tipo){ ?>
+                <option value="<?=$key?>"><?= $tipo ?></option>
+                <? } ?>
+              </select>
+            </p>
+            <p><label>Forma de Pgamento:</label>
+              <select>
+                <? foreach($arrForma as $key => $forma){ ?>
+                  <option value="<?=$key?>"><?= $forma ?></option>
+                <? } ?>
+              </select>
+            </p>
+            <p>
+              <input type="submit" value="Enviar"/>
+            </p>
+            <p></p>
+          </form>
         </section>
 
       </article>
