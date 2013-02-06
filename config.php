@@ -20,8 +20,7 @@ $arrForma =
   array(
     "Dinheiro",
     "Débito",
-    "Crédito"
-    );
+    "Crédito");
 
 
 ?>

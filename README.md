@@ -9,6 +9,7 @@ Programa para controle de gastos diários.
 ### Pasta
 /.sass
 
-### Comando 
-$ gem install sass 
+### Comando
+$ gem install sass
+
 $ sass --watch style.scss:style.css
