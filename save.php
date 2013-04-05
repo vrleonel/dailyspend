@@ -6,7 +6,7 @@ print_r($nameFile);
 print_r($newSpend);
 $delimeter = "|";
 
-$fp = fopen("csv/{$nameFile}.csv", 'a');
+$fp = fopen("csv/{$nameFile}.csv", 'a+');
 echo $fp;
 
 #foreach ($newSpend as $value) {

@@ -16,7 +16,7 @@
               <label>Valor: </label><input type="number" name="txtValor" id="txtValor" value="" />
             </p>
             <p>
-              <label>Data: </label><input type="date" name="txtData" id="txtData" value="2013-02-06" />
+              <label>Data: </label><input type="date" name="txtData" id="txtData" value="<?= date("Y")?>-<?= date("m")?>-<?= date("d")?>" />
             </p>
             <p>
               <label>Tipo: </label>
@@ -43,7 +43,7 @@
 
       </article>
 
-<!-- 
+<!--
       <aside>
         <h3>Sidebar</h3>
         <p></p>
