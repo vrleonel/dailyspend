@@ -13,7 +13,7 @@
               <label>Gasto: </label><input type="text" name="txtGasto" id="txtGasto" value="" />
             </p>
             <p>
-              <label>Valor: </label><input type="number" name="txtValor" id="txtValor" value="" />
+              <label>Valor: </label><input type="text" name="txtValor" id="txtValor" value="" />
             </p>
             <p>
               <label>Data: </label><input type="date" name="txtData" id="txtData" value="<?= date("Y")?>-<?= date("m")?>-<?= date("d")?>" />
