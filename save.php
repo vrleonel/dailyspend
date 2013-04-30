@@ -1,6 +1,9 @@
 <?php
 $newSpend = $_POST;
+
 $nameFile = date("mY");
+
+$newSpend[txtValor] = str_replace(',', '.', $_POST[txtValor]);
 print_r($nameFile);
 
 print_r($newSpend);
